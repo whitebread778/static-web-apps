@@ -39,7 +39,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        people = await Http.GetFromJsonAsync<Person[]>("http://localhost:7071/api/toons");
+        people = await Http.GetFromJsonAsync<Person[]>("/api/toons");
     }
 
     public partial class Person
